@@ -32,7 +32,7 @@ const IconMap: { [key: string]: IconType } = {
 
 const PlatformIconsList = ({ platforms }: GameProps) => {
   return (
-    <HStack marginY={2}>
+    <HStack>
       {platforms.map((platform) => (
         <Icon
           key={platform.id}
