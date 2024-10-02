@@ -3,11 +3,17 @@ import logo from "./../assets/eight-ball.svg";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
 
-const Navbar = () => {
+interface NavbarProps {
+  onSubmit: (searchText: string) => void;
+}
+
+const Navbar = ({ onSubmit }: NavbarProps) => {
   return (
     <HStack padding="10px">
       <Image src={logo} boxSize="60px"></Image>
-      <SearchInput></SearchInput>
+      <SearchInput
+        onSubmit={(searchText) => onSubmit(searchText)}
+      ></SearchInput>
       <ColorModeSwitch></ColorModeSwitch>
     </HStack>
   );
