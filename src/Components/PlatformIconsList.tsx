@@ -9,8 +9,14 @@ import {
   FaAndroid,
 } from "react-icons/fa";
 import { MdPhoneIphone } from "react-icons/md";
-import { SiNintendo } from "react-icons/si";
-import { BsGlobe } from "react-icons/bs";
+import {
+  SiNintendo,
+  SiAtari,
+  SiCommodore,
+  SiSega,
+  SiD3Dotjs,
+} from "react-icons/si";
+import { BsGlobe, BsGeo } from "react-icons/bs";
 import { IconType } from "react-icons";
 
 interface GameProps {
@@ -27,6 +33,11 @@ const IconMap: { [key: string]: IconType } = {
   linux: FaLinux,
   ios: MdPhoneIphone,
   android: FaAndroid,
+  atari: SiAtari,
+  commodore: SiCommodore,
+  sega: SiSega,
+  "3do": SiD3Dotjs,
+  "neo-geo": BsGeo,
   web: BsGlobe,
 };
 
