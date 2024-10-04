@@ -35,6 +35,7 @@ function App() {
           onSubmit={(searchText) => setGameQuery({ ...gameQuery, searchText })}
         ></Navbar>
       </GridItem>
+
       <Show above="lg">
         <GridItem area="aside" paddingX={5}>
           <GenreList
@@ -43,9 +44,11 @@ function App() {
           ></GenreList>
         </GridItem>
       </Show>
+
       <GridItem area="main">
         <Box paddingLeft={2}>
           <GameHeading gameQuery={gameQuery}></GameHeading>
+
           <HStack spacing={5} marginBottom={5}>
             <PlatformsList
               selectedPlatform={gameQuery.platform}
@@ -53,6 +56,7 @@ function App() {
                 setGameQuery({ ...gameQuery, platform })
               }
             ></PlatformsList>
+
             <SortSelector
               selectedSortOrder={gameQuery.sortOrder}
               onSelected={(sortOrder) =>
