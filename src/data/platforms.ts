@@ -1,4 +1,8 @@
-const parent_platforms = [
+const parent_platforms = {
+  "count": 14,
+  "next": null,
+  "previous": null,
+  "results": [
     {
       "id": 1,
       "name": "PC",
@@ -608,5 +612,5 @@ const parent_platforms = [
       ]
     }
   ]
-
+}
   export default parent_platforms;
