@@ -7,9 +7,6 @@ export interface Genre {
     name: string;
     image_background: string;
 }
-
-// const useGenres = () => ({data: genres, isLoading: false, error: null});
-debugger;
 const useGenres = () => {
 
     const fetchGenres = () => {
