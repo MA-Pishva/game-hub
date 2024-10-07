@@ -44,7 +44,7 @@ const IconMap: { [key: string]: IconType } = {
 const PlatformIconsList = ({ platforms }: GameProps) => {
   return (
     <HStack>
-      {platforms.map((platform) => (
+      {platforms?.map((platform) => (
         <Icon
           key={platform.id}
           as={IconMap[platform.slug]}
